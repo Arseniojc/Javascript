@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros Passos com DOM</title>
+    <style>
+        body{
+            background-color: rgb(198, 199, 199);
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p name = "msg">Aprededo a usar o <strong>DOM</strong> em Javascript</p>
+    <div id="msg">Click em Mim</div>
+    <script>
+        /*
+         *SELECIONADOR JAVASCRIPT
+         *
+         * por Marca (Tag) - getElementsByTagName()
+         * por ID - getElementById()
+         * por Nome - getElementsByName() 
+         * por Classe - getElementsByClassName()
+         * por Seletor - querySelector() ou querySelectorAll()
+         */
+
+         //Selecionando por Marca
+         var p1 = window.document.getElementsByTagName('p')[0]
+         window.document.write('A mensagem do paragrafo selecioado é : ' + p1.innerHTML)
+
+         var t1 = window.document.getElementsByTagName('h1')[0]
+         window.alert('Aplicado o alerta para titulo: ' + t1.innerHTML)
+
+         //Selecionando por ID
+         var d = window.document.getElementById('msg')
+         d.style.color = 'cyan'
+         d.innerText = 'Ja mudou de texto, Aguardando....'
+
+         
+         // Simplificando e não usar variavel - Selecionado por Nome
+         window.document.getElementsByName('msg')[0].innerHTML = 'Olá'
+
+         //Selecionando por Selector
+        var q = window.document.querySelector('div#msg')
+        q.style.background = 'green'       
+
+    </script>
+</body>
+</html>

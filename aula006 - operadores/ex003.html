@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores Relacionais</title>
+</head>
+<body>
+    <h1> Operadores Relacionais</h1>
+
+    <script>
+        var n1 = Number(window.prompt("Insira o primeiro valor: "))
+        var n2 = Number(window.prompt("Insira o segundo valor: "))
+        var  maior = n1 > n2
+        var menor = n1 < n2
+        var igual = n1 == n2
+        var maiorIgual = n1 >= n2
+        var menorIgual = n1 <= n2
+        var diferente = n1 != n2
+
+        document.write(` N1 = ${n1} e N2 = ${n2} <br>`)
+        document.write(`${n1} > ${n2} tem valor logico: ${maior} <br>`)
+        document.write(`${n1} < ${n2} tem valor logico: ${menor} <br>`)
+        document.write(`${n1} = ${n2} tem valor logico: ${igual} <br>`)
+        document.write(`${n1} >= ${n2} tem valor logico: ${maiorIgual} <br>`)
+        document.write(`${n1} <= ${n2} tem valor logico: ${menorIgual} <br>`)
+        document.write(`${n1} != ${n2} tem valor logico: ${diferente} <br>`)
+
+        /*
+         *OPERADORES DE IDENTIDADE
+         *
+         * 5 == '5' No javascript é igual, apesar de possuirem tipos diferentes ele só compara o conteudo
+         * 5 === '5' No javascript é diferente pois vai comparar cada componente (Sendo que os tipos são diferentes)
+         */
+    </script>
+</body>
+</html>

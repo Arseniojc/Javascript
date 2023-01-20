@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tratameto de dados JS</title>
+</head>
+<body>
+    <h1>Tratameto de dados Javascript</h1>
+
+    <script>
+        /* COVERSÃO DE TIPOS
+         *     STRING PARA NUMBER
+         *     Number.parseInt(n)
+         *     Number.parseFloat(n)
+         *     Numeber(n) - A linguagem vai receber valores e decidir se e Int ou float.
+         * 
+         *     NUMBER PARA STRING
+         *     String(n)
+         *     n.toString()
+         *      
+         *     PLACEHOLDER / TEMPLATE STRING
+         *     (`O aluno ${n} tem nota ${nome}`)
+         * 
+         */
+
+         var n1 = Number.parseInt(window.prompt('Insira o primeiro valor: '))
+         var n2 = Number.parseInt(window.prompt('Insira o segundo valor: '))
+         var s = n1 + n2
+
+         window.alert('A soma dos valores introduzidos é ' + s);
+         window.alert(`A soma entre ${n1} e ${n2} é ${s}`)
+    </script>
+</body>
+</html>

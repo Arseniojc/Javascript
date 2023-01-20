@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de Strings</title>
+    <style>
+        body{
+            font-family: 'Open sans';
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        /*FORMATAÇÃO DE STRINGS
+         *  var s = 'Javascript'
+         *
+         *  s.length            - Tamanho da String(s)
+         *  s.toUpperCase()     - Converter pra maiusculas
+         *  s.toLowerCase()     - Converter pra minusculas
+         *
+         *FORMATAÇÃO DE NUMEROS 
+         *  CASAS DECIMAIS      n.toFixed(2)  exemplo pra duas casas decimais
+         *  COMO MOEDA          n.toLocaleString('pt-br', {style: 'currency', currency: 'EUR'}) exemplo de euro
+         */
+
+         var nome = window.prompt("Qual é o seu nome? ")
+         var n = Number(window.prompt('Digite um valor qualquer: '))
+         document.write(`O numero de caracteres do seu nome é ${nome.length} <br>`)
+         document.write(`O seu nome com letras maiusculas é ${nome.toUpperCase()} <br>`)
+         document.write(`O seu nome com letras minusculas é ${nome.toLowerCase()}<br>`)
+         document.write(`O seu salario é ${n.toLocaleString('pt-br',{style: 'currency', currency:'EUR'})}<br>`)
+         document.write(n.toFixed(3))
+
+
+    </script>
+</body>
+</html>

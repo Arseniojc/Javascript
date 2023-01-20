@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somador de Valores</title>
+    <style>
+        input{
+            font: normal 1.3em Arial;
+            border-radius: 10px;
+        }
+
+        #resul{
+            font: bolder 1.3em Arial;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Somando Valores</h1>
+    <input type="number" name="txtn1" id="txtn1">
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="soma" onclick="somador()">
+    <div id="resul">Resultado</div>
+
+    <script>
+
+        function somador(){
+            var c1 = window.document.getElementById('txtn1')
+            var c2 = window.document.getElementById('txtn2')
+            var resul = window.document.getElementById('resul')
+            var n1 = Number(c1.value)
+            var n2 = Number(c2.value)
+            var s = n1 + n2
+            resul.innerHTML = `${s}`
+            
+        }
+        
+    </script>
+</body>
+</html>

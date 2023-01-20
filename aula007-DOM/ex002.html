@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div{
+            background-color: rgb(136, 136, 252);
+            color: rgb(71, 71, 253);
+            font-size: 1.5em;
+            width: 200px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="caixa" onclick="clicar()" onmouseenter="nobotao()">Disparar o Evento</div>
+
+    <script>
+        
+        function clicar(){
+            var t = window.document.querySelector('div#caixa')
+            t.innerHTML = 'Clicado...'
+            window.document.write('Procedimento bem sucedido')
+        }
+
+        function nobotao(){
+            var b = window.document.getElementById('caixa')
+            b.style.background = 'green'
+            b.style.color = "white"
+            
+        }
+    </script>
+</body>
+</html>
